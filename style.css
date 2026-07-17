@@ -28,7 +28,7 @@ main {
     background: var(--vinociruela);
     height: 50vh;
     width: 50vw;
-    padding: 10px 5px;
+    padding-right: 10px;
 }
 .carnet-imagen{
     width: 170px;
@@ -40,12 +40,10 @@ main {
     height: 100%;
     object-fit: cover;
 }
-.cargo {
+.empresa{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    left: 5%;
-    bottom: 5px; /*mueve el texto hacia arriba o abajo*/
     font-family: "Cormorant Infant", serif;
     text-transform: uppercase;/*Cambia el texto a mayúsculas*/
     letter-spacing: 3px;/*Darle un poco de separación entre letras*/
@@ -58,7 +56,7 @@ main {
 }
 .rol {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
@@ -66,8 +64,7 @@ main {
 }
 .nombreapellido{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     color: var(--azulnegro);
     font-family: "Economica", sans-serif;
     font-size: 2rem;
@@ -75,29 +72,20 @@ main {
 }
 .carnet-secundario {
     display: flex;
-    position: relative;
-    bottom: 5%;
-    left: 25%;
-    justify-content: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 12px 30px;
-    align-items: center;
+    gap: 12px;
     color: var(--azulnegro);
 }
 .ciudad {
     width: 100%;
     display: flex;
-    position: relative;
-    top: -40%;
-    justify-content: center;
+    justify-content: flex-end;
 }
 .contacto {
     font-size: 30px;
     display: flex;
-    position: relative;
-    top: -20%;
-    left: 20%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .correo {
@@ -106,11 +94,9 @@ main {
 }
 .personal {
     display: flex;
-    position: relative;
-    gap: 50px;
-    top: -30%;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     color: var(--azulnegro);
     font-size: 15px;
     font-family: "Metamorphous", serif;
