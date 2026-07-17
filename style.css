@@ -1,0 +1,121 @@
+:root {
+    --azulnegro: #0E1422;
+    --rosacoral: #EE80A7;
+    --verdefresco: #53BA76;
+    --vinociruela: #622944;
+    --naranjaambar: #DE751E;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 10px;
+    background: var(--vinociruela);
+    height: 50vh;
+    width: 50vw;
+    padding: 10px 5px;
+}
+.carnet-imagen{
+    width: 170px;
+    height: 170px;
+    overflow: hidden; /*controla el desbordamiento de la imagen, ocultandolo*/
+}
+.carnet-imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cargo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 5%;
+    bottom: 5px; /*mueve el texto hacia arriba o abajo*/
+    font-family: "Cormorant Infant", serif;
+    text-transform: uppercase;/*Cambia el texto a mayúsculas*/
+    letter-spacing: 3px;/*Darle un poco de separación entre letras*/
+    transform: translateX(-50%) rotate(-90deg);
+    color: var(--verdefresco);
+    font-size: 2rem;/*tipologia consistente*/
+    font-weight: 200;/*grosor de los caracteres del texto*/
+    margin: 0;
+    white-space: nowrap;/*evita saltos de linea del texto, hace que todo se mantenga en su contenedor*/
+}
+.rol {
+    display: flex;
+    justify-content: right;
+    font-family: "PT Sans Narrow", sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--rosacoral);
+}
+.nombreapellido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--azulnegro);
+    font-family: "Economica", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 3px
+}
+.carnet-secundario {
+    display: flex;
+    position: relative;
+    bottom: 5%;
+    left: 25%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 30px;
+    align-items: center;
+    color: var(--azulnegro);
+}
+.ciudad {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: -40%;
+    justify-content: center;
+}
+.contacto {
+    font-size: 30px;
+    display: flex;
+    position: relative;
+    top: -20%;
+    left: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.correo {
+    font-size: 20px;
+    color: var(--naranjaambar);
+}
+.personal {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    top: -30%;
+    justify-content: center;
+    align-items: center;
+    color: var(--azulnegro);
+    font-size: 15px;
+    font-family: "Metamorphous", serif;
+}
+.tecnologiafav {
+    font-size: 30px;
+    color: var(--naranjaambar);
+}
