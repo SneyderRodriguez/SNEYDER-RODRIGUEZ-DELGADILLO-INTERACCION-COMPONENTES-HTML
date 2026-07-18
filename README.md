@@ -66,9 +66,7 @@ proyecto/
 ## 📸 Capturas de pantalla
 
 
-```markdown
 [![images.jpg](https://i.postimg.cc/W3Zz65HT/images.jpg)](https://postimg.cc/JD1RR582)
-```
 
 ---
 
