@@ -2,8 +2,9 @@
     --azulnegro: #0E1422;
     --rosacoral: #EE80A7;
     --verdefresco: #53BA76;
-    --vinociruela: #622944;
+    --background: #622944;
     --naranjaambar: #DE751E;
+    --verdeneon: #08F30E;
 }
 
 * {
@@ -81,7 +82,7 @@ body {
     justify-content: center;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--rosacoral);
 }
 .nombrecompleto{
@@ -138,4 +139,31 @@ body {
     display: flex;
     font-size: 1.1rem;
     color: var(--verdefresco);
+}
+.insignia{
+    color: var(--verdeneon);
+    border-radius: 50px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    min-width: 20px;
+}
+figure{
+    position: relative;
+    display: inline-block;
+}
+figure::after{
+    content: "ONLINE";
+    position: absolute;
+    top: 60px;
+    right: -25px;
+    color: var(--verdeneon);
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: "Cormorant Infant", serif;
+    font-size: 3rem;
+    font-weight: 100;
+    transform: rotate(-45deg);
 }
