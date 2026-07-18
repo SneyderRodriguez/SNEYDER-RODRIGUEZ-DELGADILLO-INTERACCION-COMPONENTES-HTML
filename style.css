@@ -12,96 +12,130 @@
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
     min-height: 100vh;
     padding: 20px;
 }
 
-main {
+.frontal {
+    display: flex;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #622944, #0E1422);
+    width: 600px;
+    max-width: 100%;
+    min-height: 200%;
+}
+.reverso{
+    display: inline;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, #622944, #0E1422);
+    width: 600px;
+    max-width: 100%;
+    min-height: 200px;
+    padding: 20px;
+}
+.encabezado{
+    width: 50px;
+    background: var(--azulnegro);
+    position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    gap: 16px;
-    border-radius: 10px;
-    background: var(--vinociruela);
-    height: 50vh;
-    width: 50vw;
-    padding-right: 10px;
-}
-.carnet-imagen{
-    width: 170px;
-    height: 170px;
-    overflow: hidden; /*controla el desbordamiento de la imagen, ocultandolo*/
-}
-.carnet-imagen img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    align-items: center;
 }
 .empresa{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    position: absolute;
     font-family: "Cormorant Infant", serif;
     text-transform: uppercase;/*Cambia el texto a mayúsculas*/
     letter-spacing: 3px;/*Darle un poco de separación entre letras*/
-    transform: translateX(-50%) rotate(-90deg);
+    transform: rotate(-90deg);
     color: var(--verdefresco);
     font-size: 2rem;/*tipologia consistente*/
     font-weight: 200;/*grosor de los caracteres del texto*/
     margin: 0;
     white-space: nowrap;/*evita saltos de linea del texto, hace que todo se mantenga en su contenedor*/
 }
+.imagen{
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /*controla el desbordamiento de la imagen, ocultandolo*/
+}
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+
+}
+.principal{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .rol {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     font-family: "PT Sans Narrow", sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
     color: var(--rosacoral);
 }
-.nombreapellido{
+.nombrecompleto{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     color: var(--azulnegro);
     font-family: "Economica", sans-serif;
-    font-size: 2rem;
-    letter-spacing: 3px
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin-top: -5%;
 }
-.carnet-secundario {
+.personal{
     display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 12px;
+    justify-content: space-between;
     color: var(--azulnegro);
+    font-family: "Cormorant Infant", serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: -15%;
 }
-.ciudad {
+.info-emergencia{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px 30px;
+    color: var(--azulnegro);
+    font-size: 20px;
+}
+.ciudad{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: -5%;
 }
-.contacto {
-    font-size: 30px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-.correo {
-    font-size: 20px;
-    color: var(--naranjaambar);
-}
-.personal {
+.info-contacto{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    color: var(--azulnegro);
-    font-size: 15px;
-    font-family: "Metamorphous", serif;
+    gap: 16px;
 }
-.tecnologiafav {
-    font-size: 30px;
+.tecnologiafav{
+    display: flex;
+    font-size: 5rem;
     color: var(--naranjaambar);
+    margin-left: -20%;
+    margin-top: -10%;
+}
+.github{
+    display: flex;
+    font-size: 2rem;
+    color: var(--rosacoral);
+}
+.correo{
+    display: flex;
+    font-size: 1.1rem;
+    color: var(--verdefresco);
 }
