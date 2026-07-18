@@ -67,7 +67,7 @@ proyecto/
 
 
 ```markdown
-![BARBEQUE PIT KIT](https://i.postimg.cc/W3Zz65HT/images.jpg)
+![BARBEQUE PIT KIT]([![images.jpg](https://i.postimg.cc/W3Zz65HT/images.jpg)](https://postimg.cc/JD1RR582))
 ```
 
 ---
